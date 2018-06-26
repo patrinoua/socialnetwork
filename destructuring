@@ -1,0 +1,26 @@
+
+this.setState({
+    first: req.body.first,
+    last: req.body.last,
+    email: req.body.email,
+    user_id: result.rows[0].id,
+})
+
+
+OR
+
+const { id, firstname, lastname, email, bio} = res.data
+
+this.setState({
+    first,
+    last,
+    email,
+    user_id
+})
+
+OR
+
+this.setState({ ...res.data })
+but like that you cant see what  you're passing :'(
+
+const { getUserInfo , logInUser, lalaa } = require('./db')

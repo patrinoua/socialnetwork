@@ -1,0 +1,438 @@
+.simpleText {
+    color: lightgrey;
+    /* font-family: 'Cutive Mono', monospace; */
+    font-family: "Helvetica", monospace;
+    font-weight: 100;
+}
+body {
+    font: 14px "Helvetica";
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-size: auto 100%;
+    background-repeat: cover;
+    background-repeat: no-repeat;
+    justify-items: center;
+    align-items: center;
+}
+/* ******** CHAT ******** */
+.chatComponent {
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+.chatBox {
+    /* background-color: pink; */
+    margin-top: 50px;
+    height: 50%;
+    width: 60%;
+}
+.newChat {
+    /* background-color: grey; */
+    height: 10%;
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ChatNewTextArea {
+    width: 98%;
+    height: 85%;
+    border-radius: 5px;
+    border: 0.5px solid lightgrey;
+}
+#navigation {
+    width: 95%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: lightgrey;
+    /* font-family: 'Cutive Mono', monospace; */
+    font-weight: 100;
+}
+#navigation a {
+    color: grey;
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+}
+
+.logoBig {
+    width: 180px;
+    min-width: 20%;
+    padding: 20px;
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-items: space-between; */
+    padding: 20px;
+    position: relative;
+    /* height: 50%; */
+    /* align-items: stretch; */
+    width: 100%;
+    justify-content: center;
+}
+.pictureContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profilePic {
+    max-width: 400px;
+    max-height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profilePic img {
+    max-width: 100%;
+    padding: 10px;
+}
+.profilePicButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.uploader {
+    position: absolute;
+    justify-content: center;
+    top: 70px;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    background-color: white;
+    border: 2px solid grey;
+    margin: 20px;
+    border-radius: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bioContainer {
+    align-self: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.bioDisplayTextArea {
+    width: 80%;
+    height: 100px;
+    border: 0.5px solid lightgrey;
+}
+
+/* FRIENDS COMPONENT  */
+.friendsComponent {
+    width: 90vw;
+    position: relative;
+}
+
+.pendingFriends {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.existingFriends {
+    height: 60%;
+}
+
+.pendingFriendsList {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.pendingPerson {
+    width: 90%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.pendingPerson:hover {
+    background-color: #f6f6f6;
+    border-radius: 20px;
+}
+.pendingPic {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    /* border: 1px solid black; */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pendingPic:hover {
+    cursor: pointer;
+}
+.pendingPic img {
+    max-width: 100%;
+    max-height: 100%;
+    /* height: 50px; */
+}
+
+.pendingName {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pendingAccept {
+    width: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.inARow {
+    /* padding-left: 50px; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.existingList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.removeFriendIcon {
+    position: absolute;
+    align-self: flex-end;
+    top: 0;
+}
+.removeFriendIcon:hover {
+    filter: invert(100%);
+}
+.friendBox {
+    height: 200px;
+    width: 200px;
+    border: 2px solid lightgrey;
+    overflow: hidden;
+    margin: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.friendBox:hover {
+    cursor: pointer;
+}
+.friendBoxPic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    max-width: 200px;
+    overflow: hidden;
+}
+
+.friendBoxPic img {
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+.friendBoxText {
+    position: absolute;
+    top: 10px;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pendingFriendBoxText {
+    position: absolute;
+    top: 10px;
+    /* height: 10%;
+    width: 100%;
+     */
+    height: 10px;
+    width: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+.existingFriendBoxText {
+    padding: 10px 0;
+}
+.onlineUsersList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 500px;
+}
+.onlineUser {
+    margin: 2px;
+    display: flex;
+    align-items: center;
+}
+.onlineUserPic {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+}
+.onlineUserPic img {
+    max-height: 50px;
+    max-width: 50px;
+}
+.onlineUserText {
+    padding: 7px;
+}
+/* #lala{
+    border:none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+} */
+
+.form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: "Cutive Mono", monospace;
+}
+.form input {
+    display: block;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 14px;
+    justify-self: center;
+    justify-content: center;
+    margin: 3px;
+}
+.inputButton {
+    width: 162px;
+    justify-content: center;
+}
+button {
+    display: block;
+    background-color: #f1f1f1;
+    color: #696969;
+    font-size: 1.1em;
+    padding: 8px;
+    border: 4px solid #f6f6f6;
+    border-radius: 50px;
+    /* font-size:14px; */
+    width: 166px;
+    /* margin: 10px; */
+    margin: 15px;
+    font-family: "Cutive Mono", monospace;
+    /* box-shadow: 2px 2px 2px rgba(0,0,0,0.2); */
+}
+button:hover {
+    cursor: pointer;
+    background-color: #f6f6f6;
+}
+/* button {
+    display: block;
+    padding:10px;
+    border-radius: 2px;
+    font-size:14px;
+    width: 166px;
+    margin: 10px;
+    font-family: 'Cutive Mono', monospace;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+} */
+
+.inARow button {
+    width: 60px;
+    display: flex;
+    align-content: center;
+}
+.error,
+.errMsg {
+    color: red;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.logo {
+    justify-self: flex-start;
+    top: 10px;
+    left: 10px;
+}
+.logoImg {
+    max-height: 40px;
+}
+.userImage {
+    overflow: hidden;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+}
+.icons {
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+}
+
+.icons:hover {
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centerText {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.simpleSpan a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    /* letter-spacing: 0.1; */
+}

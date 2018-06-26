@@ -1,0 +1,30 @@
+editBio = {this.editBio}
+IsEditBioVisible = {this.state.editBioIsVisible}
+
+
+// export function ProfilePage(props){
+//     let pic = props.profilePic;
+//     console.log("profilepage...", props);
+//     // console.log('props on Profile Page',props);
+//     function editBio(){
+//         props.editBio();
+//     }
+//     if(!pic){
+//         pic='/neo.png'
+//     }
+//     return(
+//         <div className="profileContainer">
+//             <div className = "pictureContainer" >
+//                 <div className="profilePic"><img src={pic} /></div>
+//             </div>
+//             <div className = "bioContainer">
+//                 <div className="bioDisplayTextArea"> I am Neo. I like learning cool new stuff! </div>
+//                 <button type="button" onClick={editBio} >Edit bio</button>
+//                 { props.editBioIsVisible &&  <EditBio  />}
+//
+//             </div>
+//         </div>
+//     )
+// }
+
+<button type="button" onClick={editBio} >Edit bio</button>
