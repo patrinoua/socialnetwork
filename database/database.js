@@ -2,11 +2,13 @@ var bcrypt = require('bcryptjs');
 var spicedPg = require('../node_modules/spiced-pg');
 
 var db;
+
 if(process.env.DATABASE_URL){
     db = spicedPg(process.env.DATABASE_URL);
 }else {
     db = spicedPg('postgres:funky:chicken@localhost:5432/social');
 }
+
 // ************** REGISTRATION *************
 exports.saveUser = (first, last, email, password) => {
     return db.query('INSERT INTO users (first, last, email, pass) VALUES ($1, $2, $3, $4) RETURNING id',
