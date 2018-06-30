@@ -5,8 +5,13 @@ const db = require("./database/database");
 const bodyParser = require("body-parser");
 const cookieSession = require("cookie-session");
 const hashPassword = require("./config/hashPassword").hashPassword;
-const { secret } = require("./config/secrets.json");
 const csurf = require("csurf");
+
+if(!process.env.DATABASE_URL){
+    secret = require('./config/secrets.json').mySecret;
+}else{
+    secret = process.env.MY_SECRET;
+}
 
 const server = require("http").Server(app);
 const io = require("socket.io")(server, {
