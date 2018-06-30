@@ -9,9 +9,9 @@ const csurf = require("csurf");
 
 let secret;
 if(!process.env.DATABASE_URL){
-    secret = require('./config/secrets.json').mySecret;
+    secret = require('./config/secrets.json');
 }else{
-    secret = process.env.MY_SECRET;
+    secret = process.env.secret;
 }
 
 const server = require("http").Server(app);
