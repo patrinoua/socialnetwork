@@ -7,6 +7,7 @@ const cookieSession = require("cookie-session");
 const hashPassword = require("./config/hashPassword").hashPassword;
 const csurf = require("csurf");
 
+let secret;
 if(!process.env.DATABASE_URL){
     secret = require('./config/secrets.json').mySecret;
 }else{
